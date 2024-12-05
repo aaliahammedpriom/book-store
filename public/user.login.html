@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>User Log in</title>
+  </head>
+  <body>
+    <div class="container p-3c  text-success">
+      <h1 class="text-center">Please Log in to continue</h1>
+      <form action="/user/login" method="post">
+        <div class="mb-3">
+          <label for="Email1" class="form-label">Email </label>
+          <input
+            type="email"
+            class="form-control"
+            id="email1"
+            aria-describedby="emailHelp"
+            name="email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Password1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="Password1"
+            name="password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+      </form>
+      <p class="pt-2">
+        New user? Click on
+        <a class="text-decoration-none" href="/user/register">Registration</a>
+      </p>
+      <br />
+      <p>
+        Are you an Admin?
+        <a class="text-decoration-none" href="/admin/login">Log In</a>
+      </p>
+    </div>
+  </body>
+</html>
